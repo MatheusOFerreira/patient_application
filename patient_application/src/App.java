@@ -4,7 +4,7 @@ public class App {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		int opcao = 0, tamanho, codigo, idade;
+		int opcao, tamanho, codigo, idade;
 		double altura, peso;
 		char genero;
 		String nome;
@@ -108,7 +108,14 @@ public class App {
 					listaDePacientes.mostraIMC(listaDePacientes.consultaPorCodigo(codigo));
 				}
 				break;
-				
+			case 10:
+				System.out.println("Informe o código do paciente:");
+				codigo = sc.nextInt();
+				if(listaDePacientes.consultaPorCodigo(codigo)!= null){
+					System.out.println(p.calculaPesoIdeal(p.getAltura(), p.getGenero());
+				}
+				else
+					System.out.println("Paciente não existente!");
 			case 0:
                 System.out.println("Saindo do programa...");
                 break;
@@ -131,6 +138,7 @@ public class App {
         System.out.println("7. Alterar Altura de um Paciente");
         System.out.println("8. Alterar Sexo de um Paciente");
         System.out.println("9. Mostrar IMC de um Paciente");
+	System.out.println("10. Calcula peso ideal de um Paciente");	
         System.out.println("0. Sair");
 	}
 }
