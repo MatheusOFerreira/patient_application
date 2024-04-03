@@ -1,3 +1,3 @@
 # Final Project - First Semester
 
-Development of a patient control application.
+Final project developed in the Fundamentals of Programming course, in the first semester of the Software Engineering course. The project consists of creating a system that manages patients.
